@@ -5,7 +5,7 @@ import logo from './to-do-list.png';
 
 const getLocalItems = () =>{
     let list = localStorage.getItem('TodoList');
-    console.log(list);
+    
 
     if(list){
         return JSON.parse(localStorage.getItem('TodoList'));
@@ -74,7 +74,7 @@ const editItem = (id) =>{
         return element.id === id;
        
     });
-    console.log(newEditItem);
+   
     setToggleButton(false);
     setInputdata(newEditItem.name);
     setIsEditItem(id);
